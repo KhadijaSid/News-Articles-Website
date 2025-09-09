@@ -1,0 +1,168 @@
+@font-face {
+    font-family: neu;
+    src: url(./NeueHaasDisplayMediu.ttf);
+}
+@font-face {
+    font-weight: 100;
+    font-family: neu;
+    src: url(./NeueHaasDisplayLight.ttf);
+}
+@font-face {
+    font-weight: 200;
+    font-family: neu;
+    src: url(./NeueHaasDisplayRoman.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'neu';
+}
+:root{
+    --primary-text-color: #183b56;
+    --secondry-text-color: #577592;
+    --accent-color: #2294ed;
+    --accent-color-dark:  #1d69a3;
+}
+body{
+    color: var(--primary-text-color);
+}
+
+p{
+    color: var(--secondry-text-color);
+    line-height: 1.4rem;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    max-width: 1180px;
+    margin-inline: auto;
+    overflow: hidden;
+}
+nav{
+    background-color: #f3faff;
+    box-shadow: 0 0 4px #bbd0e2;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    left: 0;
+    right: 0;   
+}
+
+.main-nav{
+    justify-content: space-between;
+    padding-block: 8px;
+
+}
+
+.logo img{
+    width: 120px;
+}
+.nav-links ul{
+    gap: 16px;
+}
+
+.hover-link{
+    cursor: pointer;
+
+}
+.hover-link:hover{
+    color: var(--secondry-text-color);
+}
+.hover-link:active{
+    color: rgb(77, 75, 75);
+}
+.nav-item.active{
+    color: var(--accent-color);
+}
+
+.search-bar{
+    height: 32px;
+    gap: 8px;
+}
+
+.news-input{
+    height: 100%;
+    width: 200px;
+    padding-inline: 12px;
+    border-radius: 4px;
+    border: 2px solid #bbd0e2;
+    font-weight: 100;
+}
+
+.search-button{
+    color: white;
+    background-color: var(--accent-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 8px 24px;
+    font-weight: 400;
+}
+.search-button:hover{
+    background-color: var(--accent-color-dark);
+}
+
+main{
+    padding-block: 20px;
+    margin-top: 80px ;
+}
+
+.cards-container{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: start;
+    row-gap: 20px;
+}
+
+.card{
+    width: 360px;
+    min-height: 400px;
+    box-shadow: 0 0 4px #d4ecff;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: #fff;
+    overflow: hidden;
+    transition: all 0.3s ease;
+
+}
+.card:hover{
+    box-shadow: 1px 1px 4px #d4edcf;
+    background-color: #f9fdff;
+    transform: translateY(-2px);
+}
+
+.card-header img{
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+}
+.card-content{
+    padding: 12px;
+}
+.news-source{
+    margin-block: 12px;
+}
+footer{
+    min-height: 40px;
+    background-color: #f3faff;
+    box-shadow: 0 0 4px #bbd0e2;
+    color: var(--primary-text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
