@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/logo.png">
+    <title>Coding Shuttle - News</title>
+    
+</head>
+<body>
+    <nav>
+        <div class="main-nav container flex">
+        <a href="#" onclick="reload()" class="logo">
+            <img src="assets/logo.png" alt="logo">
+        </a>
+        <div class="nav-links">
+            <ul class="flex">
+                <li class="hover-link nav-item" id="Entertainment" onclick="onNavItemClick('Entertainment')">Entertainment</li>
+                <li class="hover-link nav-item" id="finance" onclick="onNavItemClick('finance')">Finanace</li>
+                <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+            </ul>
+        </div>
+        <div class="search-bar flex" >
+            <input type="text" class="news-input" id="news-input" placeholder="e.g. science">
+            <button class="search-button" id="search-button">Search</button>
+        </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+           
+        </div>
+
+        <template id="template-news-card">
+             <div class="card">
+                <div class="card-header">
+                    <img src="https://via.placeholder.com/400x200" alt="new image" id="new-img">
+                </div>
+                <div class="card-content">
+                    <h3 id="news-title">This is a title</h3>
+                    <h6 class="news-source" id="news-source">End gadget 20/05/2006</h6>
+                    <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ex recusandae at blanditiis? Quae minima excepturi omnis iste fugiat soluta doloribus possimus perspiciatis? Vitae laboriosam sit distinctio alias, dolores laborum.</p>
+                </div>
+            </div>
+        </template>
+    </main>
+    <footer >
+        <div class="footer-text"> Copyright © 2025. Coding Shuttle All rights reserved</div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
